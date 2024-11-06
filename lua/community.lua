@@ -11,11 +11,12 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.just" },
   { import = "astrocommunity.pack.ruby" },
-  { import = "astrocommunity.pack.sql" },
+  -- { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.colorscheme.github-nvim-theme" },
   -- import/override with your plugins folder
 }

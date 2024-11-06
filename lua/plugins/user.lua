@@ -21,17 +21,14 @@ return {
     opts = function(_, opts)
       -- customize the dashboard header
       opts.section.header.val = {
-        " █████  ███████ ████████ ██████   ██████",
-        "██   ██ ██         ██    ██   ██ ██    ██",
-        "███████ ███████    ██    ██████  ██    ██",
-        "██   ██      ██    ██    ██   ██ ██    ██",
-        "██   ██ ███████    ██    ██   ██  ██████",
-        " ",
-        "    ███    ██ ██    ██ ██ ███    ███",
-        "    ████   ██ ██    ██ ██ ████  ████",
-        "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-        "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-        "    ██   ████   ████   ██ ██      ██",
+        "                                                     ",
+        "  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
+        "  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ",
+        "  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ",
+        "  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ",
+        "  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ",
+        "  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
+        "                                                     ",
       }
       return opts
     end,
@@ -80,34 +77,12 @@ return {
       )
     end,
   },
-
-  {
-    "EdenEast/nightfox.nvim",
-    -- as = "nightfox",
-    config = function() require("nightfox").setup() end,
-  },
   {
     "dstein64/vim-startuptime",
     -- lazy-load on a command
     cmd = "StartupTime",
     -- init is called during startup. Configuration for vim plugins typically should be set in an init function
     init = function() vim.g.startuptime_tries = 10 end,
-  },
-  {
-    "folke/twilight.nvim",
-    lazy = false,
-    enabled = true,
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    },
-  },
-  {
-    "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = {},
   },
   {
     "folke/zen-mode.nvim",
