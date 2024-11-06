@@ -25,7 +25,7 @@ return {
           -- "go",
         },
         ignore_filetypes = { -- disable format on save for specified filetypes
-          -- "python",
+          -- "python, ruby",
         },
       },
       disabled = { -- disable formatting capabilities for the listed language servers
@@ -41,6 +41,7 @@ return {
     servers = {
       -- "pyright"
     },
+    skip_setup = { "rust_analyzer" }, -- rust-tools will handle setting up the LSP
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
