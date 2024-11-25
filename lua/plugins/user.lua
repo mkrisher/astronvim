@@ -47,7 +47,6 @@ return {
       luasnip.filetype_extend("javascript", { "javascriptreact" })
     end,
   },
-
   {
     "windwp/nvim-autopairs",
     config = function(plugin, opts)
@@ -177,9 +176,10 @@ return {
   { "tpope/vim-abolish", lazy = false },
   { "tpope/vim-surround", lazy = false },
   { "tpope/vim-unimpaired", lazy = false },
-  { "vim-scripts/Align", lazy = false },
+  -- { "vim-scripts/Align", lazy = false },
   { "folke/todo-comments.nvim", lazy = false },
   { "keith/rspec.vim", ft = "ruby" },
   { "neovim/nvim-lspconfig" },
   { "simrat39/rust-tools.nvim" },
+  { "TaDaa/vimade" },
 }
