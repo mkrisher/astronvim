@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -41,21 +39,24 @@ return {
     servers = {
       -- "pyright"
     },
-    skip_setup = { "rust_analyzer" }, -- rust-tools will handle setting up the LSP
+    skip_setup = { "rust_analyzer" }, -- rustaceanvim will handle setting up the LSP
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
-      rust_analyzer = {
-        settings = {
-          ["rust-analyzer"] = {
-            cargo = {
-              extraEnv = { CARGO_PROFILE_RUST_ANALYZER_INHERITS = "dev" },
-              extraArgs = { "--profile", "rust-analyzer" },
-            },
-          },
-        },
-      },
+      -- rust_analyzer = {
+      --   settings = {
+      --     ["rust-analyzer"] = {
+      --       diagnostics = {
+      --         refreshSupport = false,
+      --       },
+      --       cargo = {
+      --         extraEnv = { CARGO_PROFILE_RUST_ANALYZER_INHERITS = "dev" },
+      --         extraArgs = { "--profile", "rust-analyzer" },
+      --       },
+      --     },
+      --   },
+      -- },
     },
     -- customize how language servers are attached
     handlers = {
