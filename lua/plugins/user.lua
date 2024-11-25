@@ -172,6 +172,21 @@ return {
     "stevearc/dressing.nvim",
     event = "VeryLazy",
   },
+  {
+    "folke/snacks.nvim",
+    priority = 1000,
+    lazy = false,
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+      bigfile = { enabled = true },
+      notifier = { enabled = true },
+      quickfile = { enabled = true },
+      statuscolumn = { enabled = true },
+      words = { enabled = true },
+    },
+  },
   { "tpope/vim-rails", ft = "ruby" },
   { "tpope/vim-abolish", lazy = false },
   { "tpope/vim-surround", lazy = false },
@@ -182,4 +197,5 @@ return {
   { "neovim/nvim-lspconfig" },
   { "simrat39/rust-tools.nvim" },
   { "TaDaa/vimade" },
+  { "sphamba/smear-cursor.nvim" },
 }
