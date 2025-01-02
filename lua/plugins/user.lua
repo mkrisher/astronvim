@@ -235,6 +235,7 @@ return {
       rename = { enabled = true },
       input = { enabled = true },
       dim = { enabled = true },
+      debug = { enabled = true },
     },
   },
   { "tpope/vim-rails", ft = "ruby" },
